@@ -1,0 +1,19 @@
+spring.main.web-application-type: reactive
+spring.application.name: spring-cloud-gateway
+server.port: 8888
+management.endpoint.gateway.enabled: true # default value
+management.endpoints.web.exposure.include: gateway
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: index
+          uri: http://example.com
+          predicates:
+            - Path=/example

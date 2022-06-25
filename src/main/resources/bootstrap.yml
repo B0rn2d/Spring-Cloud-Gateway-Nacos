@@ -1,0 +1,9 @@
+## bootstrap.yml
+spring:
+  cloud:
+    nacos:
+      config:
+        name: gateway
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        server-addr: localhost:8848
