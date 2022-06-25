@@ -7,3 +7,5 @@ spring:
         file-extension: yaml
         group: DEFAULT_GROUP
         server-addr: localhost:8848
+      discovery:
+        server-addr: localhost:8848
